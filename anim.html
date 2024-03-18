@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: #050210;
+            
+        }
+        #div-1{
+            height: 350px;
+            width: 350px;
+            margin: 20vh auto;
+            position: relative;
+            border: 1px solid rgb(241, 234, 234);
+            border-radius: 100%;
+            background: linear-gradient( #fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+            padding: 20px;
+            filter: blur(1px);
+            box-shadow: 0.3px 0.3px 65px #55fb9f, -0.3px -0.3px 65px #fb5dad;
+            
+
+           
+            
+            animation-name: anim;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+            
+           
+        }
+        #div-2{
+            height: 330px;
+            width: 330px;
+            background-color:  #050210;
+            position: absolute;
+            border: 1px solid black;
+            border-radius: 100%;
+            right: 0;
+            left: 0;
+            margin: -80.8vh auto;
+            
+            
+            
+        }
+        #div-3{
+            height: 33px;
+            width: 33px;
+            border: 1px solid black;
+            border-radius: 100%;
+            background-color:  #160b3a;
+            filter: opacity(0.4);
+            margin: 24.5vh auto;
+            transform: perspective(700px) translateZ(200px);
+            
+
+            animation-name: ani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-out;
+            
+
+
+        }
+        @keyframes ani {
+            0%{
+                transform: perspective(700px) translateZ(200px);
+            }
+            100%{
+                transform: perspective(700px) translateZ(620px);
+            }
+        }
+
+        @keyframes anim {
+            0%{
+                transform: rotateZ(0deg);
+            }
+           
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div-1">
+    </div>
+    <div id="div-2">
+        <div id="div-3"></div>
+    </div>
+    
+    
+</body>
+</html>
